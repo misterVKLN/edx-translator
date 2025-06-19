@@ -81,37 +81,3 @@ GET /api/files/[type]/[filename]
 # Удалить конкретный файл
 DELETE /api/files/[type]/[filename]
 ```
-
-## Translation Process
-
-### Archives
-1. Extract tar.gz file to temporary directory
-2. Identify XML and HTML files
-3. Translate content while preserving structure
-4. Create new tar.gz with translated content
-5. Clean up temporary files
-
-### Notebooks
-1. Parse JSON structure
-2. Identify markdown cells
-3. Translate markdown content
-4. Preserve code cells and metadata
-5. Return updated JSON
-
-## Supported File Types
-
-- **Archives**: .tar.gz, .tar
-- **Notebooks**: .ipynb
-- **Content**: XML, HTML, Markdown
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## License
-
-This project is licensed under the MIT License.
